@@ -64,7 +64,7 @@ if ((num1 > num2) && (num1 > num3)) {
 */
 
 
-//EXERCÍCIO 3
+/*EXERCÍCIO 3
 const prompt = require('prompt-sync')()
 
 let num1 = Number(prompt("Insira o primeiro valor: "))
@@ -86,10 +86,29 @@ if(operation === '+'){
         result = undefined
     }
 } else {
-    console.log('Operação Inválida!')
+    console.log('Operação inválida!')
     result = undefined
 }
 
 if(result !== undefined){
     console.log("Resultado: ", result)
 }
+*/
+
+
+//EXERCÍCIO 4
+let option = 2
+
+switch(option){
+    case 1:
+        console.log('Você selecionou a primeira opção')
+        break
+    case 2:
+        console.log('Você selecionou a segunda opção')
+        break
+    default:
+        console,log('Você não escolheu nenhuma das opções')
+        break
+}
+
+
