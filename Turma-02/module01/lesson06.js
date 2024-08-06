@@ -89,3 +89,7 @@ if(operation === '+'){
     console.log('Operação Inválida!')
     result = undefined
 }
+
+if(result !== undefined){
+    console.log("Resultado: ", result)
+}
