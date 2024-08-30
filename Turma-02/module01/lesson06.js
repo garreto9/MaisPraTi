@@ -32,7 +32,7 @@ if((age >= 18) && (age <=32)) {
 
 
 //EXERCÍCIO 1
-/*let nmr = 9
+let nmr = 9
 
 if(nmr % 2 === 0){
     console.log('O número ' + nmr + " é par!")
@@ -42,10 +42,10 @@ if(nmr % 2 === 0){
 
 
 //PROFESSOR FEZ
-let num1 = 19
+// let num1 = 19
     
-num1 % 2 === 0 ? console.log('PAR!') : console.log('ÍMPAR!')
-*/
+// num1 % 2 === 0 ? console.log('PAR!') : console.log('ÍMPAR!')
+
 
 
 //EXERCÍCIO 2
@@ -97,18 +97,18 @@ if(result !== undefined){
 
 
 //EXERCÍCIO 4
-let option = 2
+// let option = 2
 
-switch(option){
-    case 1:
-        console.log('Você selecionou a primeira opção')
-        break
-    case 2:
-        console.log('Você selecionou a segunda opção')
-        break
-    default:
-        console,log('Você não escolheu nenhuma das opções')
-        break
-}
+// switch(option){
+//     case 1:
+//         console.log('Você selecionou a primeira opção')
+//         break
+//     case 2:
+//         console.log('Você selecionou a segunda opção')
+//         break
+//     default:
+//         console,log('Você não escolheu nenhuma das opções')
+//         break
+// }
 
 
