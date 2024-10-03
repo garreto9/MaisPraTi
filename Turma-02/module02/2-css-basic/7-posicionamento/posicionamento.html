@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamentos</title>
+    <style>
+        .container {
+            position: relative;
+            background-color: #ccc;
+            width: 800px;
+            margin: 20px auto;
+            border: 3px solid;
+            top: 10px;
+            left: 30px;            
+        }
+        
+        .absolute {
+            position: absolute;
+            border: 3px solid salmon;
+            top: 30px;
+            right: 30px;
+            bottom: 100px;
+        }
+        
+        .fixed {
+            position: fixed;
+            border: 2px solid salmon;
+            top: 300px;
+            left: 10px;            
+            
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exemplos de Posicionamento:</h1>
+
+        <p class="sticky">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis neque voluptatibus nisi labore velit fugiat possimus repellendus enim, maxime consequuntur maiores quia aliquam quaerat id non ad iusto, beatae sed.</p>
+
+        <p class="relative">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quidem.</p>
+
+        <p class="absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, omnis?<span>Eu estive aqui</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non doloremque blanditiis tempore numquam velit voluptatem.</p>
+
+        <p class="fixed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum numquam aliquam obcaecati, sequi non omnis assumenda corrupti eligendi rerum, labore blanditiis culpa voluptatem expedita atque accusamus? Rerum, a consequuntur itaque ab ipsum assumenda iure beatae odit sunt illo adipisci placeat eius corporis mollitia quaerat quae in unde voluptas nesciunt! Sapiente!</p>
+    </div>
+</body>
+</html>
