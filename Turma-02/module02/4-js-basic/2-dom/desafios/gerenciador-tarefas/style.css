@@ -1,0 +1,24 @@
+.remove-btn, .edit-btn {
+    margin-left: 10px;
+    cursor: pointer;
+    color: red;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+filter.btn {
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.active-filter {
+    background-color: #ccc;
+}
+
+.editing {
+    border: 1px solid grey;
+}
