@@ -1,25 +1,37 @@
-let titulo = document.getElementById('titulo')
-console.log(titulo.textContent)
+let title = document.getElementById('title');
+// Obtém o elemento com o id 'title' (geralmente um título como <h1> ou <h2>)
 
-titulo.textContent = ('Aula de JS Básico')
-console.log(titulo.textContent)
+title.textContent = "Aula de JS básico";
+// Altera o conteúdo de texto do elemento 'title' para "Aula de JS básico"
+// textContent altera apenas o texto, sem permitir tags HTML
 
-titulo.innerHTML = 'Mudei Novamente o Título'
+title.innerHTML = "Mudei o conteúdo do título novamente";
+// Altera o conteúdo HTML do elemento 'title' para "Mudei o conteúdo do título novamente"
+// innerHTML permite usar tags HTML dentro do conteúdo, diferente de textContent
 
-titulo.style.color = 'blue'
+title.style.color = "blue";
+// Altera a cor do texto do elemento 'title' para azul, manipulando o estilo CSS diretamente
 
-let botao = document.getElementById('botao')
+let button = document.getElementById('button');
+// Obtém o elemento com o id 'button' (provavelmente um botão <button>)
 
-botao.addEventListener('click', () => {
-    alert('Você clicou no Botão')
+button.addEventListener('click', () => {
+    // Adiciona um evento de clique ao botão. Quando o botão for clicado, a função anônima será executada
+    alert('Você clicou no botão!');
+    // Exibe um alerta com a mensagem "Você clicou no botão!" quando o botão for clicado
 })
 
-let novoParagrafo = document.createElement('p')
-novoParagrafo.innerHTML = 'Este é um novo parágrafo criado via JS.'
+let newParagraph = document.createElement('p');
+// Cria um novo elemento <p> (parágrafo) dinamicamente usando JavaScript
 
-document.body.appendChild(novoParagrafo)
+newParagraph.innerHTML = "Este é um parágrafo criado via JS";
+// Define o conteúdo HTML do novo parágrafo criado com a mensagem "Este é um parágrafo criado via JS"
 
-let paragrafo = document.querySelector('.paragrafo')
+document.body.appendChild(newParagraph);
+// Adiciona o novo parágrafo como o último filho do elemento <body>, inserindo-o na página
 
-paragrafo.remove()
+let paragraph = document.querySelector('.paragraph');
+// Seleciona o primeiro elemento com a classe 'paragraph' na página
 
+paragraph.remove();
+// Remove o elemento parágrafo selecionado da página

@@ -1,54 +1,68 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posicionamentos</title>
+    <title>Positioning</title>
     <style>
+        /* Container com position relative */
         .container {
-            position: relative;
-            background-color: #ccc;
-            width: 800px;
-            margin: 20px auto;
-            border: 3px solid;
-            top: 10px;
-            left: 30px;            
-        }
-        
-        .absolute {
-            position: absolute;
-            border: 3px solid salmon;
-            top: 30px;
-            right: 30px;
-            bottom: 100px;
-        }
-        
-        .fixed {
-            position: fixed;
-            border: 2px solid salmon;
-            top: 300px;
-            left: 10px;            
-            
+            position: relative; /* Define o posicionamento relativo */
+            background-color: #ccc; /* Cor de fundo do container */
+            width: 800px; /* Largura do container */
+            margin: 20px auto; /* Centraliza o container horizontalmente com uma margem de 20px */
+            border: 3px solid black; /* Borda preta ao redor do container */
+            top: 10px; /* Move o container 10px para baixo em relação ao seu posicionamento original */
+            left: 30px; /* Move o container 30px para a direita em relação ao seu posicionamento original */
         }
 
+        /* Elemento com position absolute */
+        .absolute {
+            position: absolute; /* Define o posicionamento absoluto em relação ao elemento pai mais próximo com position relative */
+            border: 3px solid blue; /* Borda azul ao redor do elemento */
+            top: 30px; /* Move o elemento 30px para baixo do topo do elemento pai */
+            right: 30px; /* Move o elemento 30px para a esquerda da borda direita do elemento pai */
+            bottom: 10px; /* Move o elemento 10px acima da borda inferior do elemento pai */
+        }
+
+        /* Elemento com position fixed */
+        .fixed {
+            position: fixed; /* Define o posicionamento fixo em relação à janela do navegador */
+            border: 2px solid blue; /* Borda azul ao redor do elemento */
+            top: 0; /* Fixado no topo da janela do navegador */
+            left: 10px; /* Fixado 10px da borda esquerda da janela do navegador */
+        }
+
+        /* Elemento com position sticky */
         .sticky {
-            position: sticky;
-            top: 0;
-            background: yellow;
+            position: sticky; /* Define o posicionamento adesivo em relação ao container de rolagem mais próximo */
+            top: 0; /* O elemento se fixa no topo do container de rolagem quando atinge o topo da janela */
+            background: yellow; /* Cor de fundo amarela para destacar o elemento */
+            border: 2px solid orange; /* Borda laranja ao redor do elemento */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Exemplos de Posicionamento:</h1>
+        <h1>Exemplos de posicionamento</h1>
 
-        <p class="sticky">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis neque voluptatibus nisi labore velit fugiat possimus repellendus enim, maxime consequuntur maiores quia aliquam quaerat id non ad iusto, beatae sed.</p>
+        <!-- Elemento com position sticky -->
+        <p class="sticky">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur expedita quod aperiam quisquam mollitia voluptate eveniet recusandae facilis sint dicta, a vero. Velit iusto quas id sequi quae.</p>
+        <!-- O elemento sticky se fixa no topo da área de rolagem quando atinge o topo da janela -->
 
-        <p class="relative">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quidem.</p>
+        <!-- Elemento com position relative -->
+        <p class="relative">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, saepe!</p>
+        <!-- O elemento relative não foi estilizado no exemplo, mas seu posicionamento relativo é em relação ao seu posicionamento original -->
 
-        <p class="absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, omnis?<span>Eu estive aqui</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non doloremque blanditiis tempore numquam velit voluptatem.</p>
+        <!-- Elemento com position absolute -->
+        <p class="absolute">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span>Eu estive aqui</span> Veritatis ex sint ab doloremque sit laboriosam unde in non atque incidunt!</p>
+        <!-- O elemento absolute está posicionado em relação ao elemento pai mais próximo com position relative -->
 
-        <p class="fixed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum numquam aliquam obcaecati, sequi non omnis assumenda corrupti eligendi rerum, labore blanditiis culpa voluptatem expedita atque accusamus? Rerum, a consequuntur itaque ab ipsum assumenda iure beatae odit sunt illo adipisci placeat eius corporis mollitia quaerat quae in unde voluptas nesciunt! Sapiente!</p>
+        <!-- Elemento com position fixed -->
+        <p class="fixed">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestias aspernatur iste commodi perspiciatis laboriosam accusamus fugiat alias, incidunt quae. Cum doloremque veniam inventore, voluptates perferendis necessitatibus omnis ut deleniti. Quibusdam id enim officiis maxime sapiente assumenda, adipisci doloribus praesentium.
+        </p>
+        <!-- O elemento fixed permanece fixo na janela do navegador, independentemente da rolagem -->
     </div>
 </body>
 </html>

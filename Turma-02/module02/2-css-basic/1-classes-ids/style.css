@@ -1,32 +1,43 @@
-#cabecalho {
+/* Estiliza o cabeçalho, definindo cor de fundo e cor do texto, 
+   com padding para espaçamento interno e centralização do texto */
+   #cabecalho {
     background-color: #333;
-    color: white;
+    color: #fff;
     padding: 20px;
     text-align: center;
 }
 
+/* Define margens ao redor do conteúdo e 
+   a fonte usada na seção de conteúdo */
 #conteudo {
     margin: 20px;
-    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.paragrafosDestaque {              
+/* Aplica estilo específico para parágrafos com a classe "paragrafosDestaque", 
+   adicionando espaçamento interno e uma borda amarela na esquerda */
+.paragrafosDestaque {
     padding: 10px;
-    border-left: 3px solid orange;
-    border-bottom: 3px solid orange;
-    font-weight: bold;
+    border-left: 4px solid #fbc02d;
 }
 
+/* Estiliza todos os botões, definindo a cor do texto, 
+   espaçamento interno, bordas, margens e um efeito de cursor de clique */
 .botao {
-    margin-right: 5px;
     color: white;
-    padding: 9px;
+    padding: 10px;
     border: none;
+    margin-right: 10px;
     cursor: pointer;
-    border-radius: 15px;
-
+    border-radius: 10px; /* Bordas arredondadas nos botões */
 }
-.Bclickhere, .Bfindoutmore {
-    background-color: #4caf50;
+
+/* Especifica a cor de fundo do botão "Clique aqui", utilizando um tom de verde */
+.botao-clique-aqui {
+    background-color: #4CAf50;
+}
+
+/* Especifica a cor de fundo do botão "Saiba mais", utilizando um tom de azul */
+.botao-saiba-mais {
+    background-color: #008cba;
 }
