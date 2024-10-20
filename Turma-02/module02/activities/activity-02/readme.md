@@ -1,56 +1,61 @@
-# Atividade 3: Criando uma Página Web Simples
 
-## Descrição
+# WolfCyberStack
 
-Este projeto é um site de recomendações de animes, onde você pode encontrar uma lista de animes de alta qualidade e informações sobre onde assisti-los.
+## Visão Geral
+O WolfCyberStack é um site especializado em Segurança da Informação e Cibersegurança. Este projeto inclui seções para serviços oferecidos, depoimentos de clientes e um formulário de contato.
 
-![Imagem do Site](https://github.com/garreto9/MaisPraTi/blob/main/Turma-02/module02/activities/activity-01/images/site.jpeg)
+## Tecnologias Utilizadas
+
+- **HTML5**: Estrutura semântica da página.
+- **CSS3**: Estilização da página com foco em design responsivo.
+- **JavaScript**: Para funcionalidades interativas.
+- **Bootstrap**: Framework CSS para um design responsivo e moderno.
+- **Swiper.js**: Biblioteca para sliders/carrosséis.
+- **AOS.js**: Biblioteca para animações de rolagem.
 
 ## Funcionalidades
-- Exibição de uma lista de animes recomendados
-- Navegação através de um carrossel de imagens dos animes
-- Links para plataformas de streaming onde os animes podem ser assistidos
-- Layout responsivo para uma melhor experiência de usuário em diferentes dispositivos
 
-## Arquivos Principais
+- **Cabeçalho e Navegação**: Um cabeçalho fixo que contém o nome do site e links para seções importantes.
+- **Slider de Imagens**: Um carrossel de imagens na seção principal do site.
+- **Seções**: Informações sobre o profissional, serviços oferecidos, depoimentos de clientes e um formulário de contato.
+- **Rodapé**: Links para redes sociais e informações adicionais.
 
-### index.html
-Este arquivo contém a estrutura principal do site, incluindo o cabeçalho, o carrossel de animes, e links para plataformas de streaming.
+## Como Visualizar o Projeto Localmente
+Para visualizar o projeto localmente, siga os passos abaixo:
 
-### style.css
-Este arquivo contém os estilos CSS para a página, incluindo a definição das fontes, layout do carrossel, e design responsivo.
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/garreto9/MaisPraTi.git
+   ```
+2. **Navegue até o diretório do projeto:**
+   ```bash
+   cd MaisPraTi\Turma-02\module02\activities\activity-02
+   ```
+3. **Abra o arquivo `index.html` em um navegador web:**
+   ```bash
+   open index.html  # Para usuários de Mac
+   start index.html # Para usuários de Windows
+   xdg-open index.html # Para usuários de Linux
+   ```
 
-#### Estrutura do CSS
-- **body**: Configurações gerais de estilo para todo o corpo da página, incluindo fonte, margens e centralização de conteúdo.
-- **h1**: Estilização do título principal, incluindo tamanho da fonte, cor, sombra e alinhamento.
-- **.about**: Estilos específicos para as seções descritivas do site, ajustando o alinhamento e o espaçamento.
-- **header, footer**: Definições de estilo para cabeçalho e rodapé, incluindo cor de fundo e alinhamento de texto.
-- **nav ul**: Estilização para a lista de navegação no cabeçalho, removendo estilos padrão e ajustando margens.
-- **nav ul li**: Estilos para itens de lista na navegação, definindo layout inline e margens.
-- **nav ul li a**: Estilos para links na navegação, incluindo cores e efeitos de hover.
-- **.main-container**: Definições de estilo para o contêiner principal, garantindo layout flexível e responsivo.
-- **section.carousel**: Estilização do carrossel de imagens, incluindo cor de fundo, layout e alinhamento.
-- **.carousel-container**: Configurações para contêiner do carrossel, garantindo que as imagens estejam centralizadas e ajustadas corretamente.
-- **button.prev, button.next**: Estilos para botões de navegação do carrossel, incluindo posição, cor e efeitos de hover.
-- **aside**: Estilização para a barra lateral, incluindo cor de fundo, espaçamento e alinhamento do texto.
-- **aside ul li a**: Estilos para links na barra lateral, incluindo cor, efeito de hover e transição.
-- **footer**: Estilização específica para o rodapé, garantindo que ele se ajuste ao final da página.
+## APIs Utilizadas
+- **Random User API:** Utilizada para gerar usuários aleatórios e suas imagens para os depoimentos. A chamada da API é feita através do seguinte endpoint:
+  ```
+  https://randomuser.me/api/?results=4
+  ```
+- **EmailJS:** Utilizada para enviar formulários de contato. É necessário configurar um ID de usuário do EmailJS para o funcionamento do envio.
 
-## Como Rodar o Projeto
+## Bibliotecas Externas
+1. **Swiper.js:** Uma biblioteca de carrosséis que permite criar sliders responsivos e personalizáveis. Utilizada para a seção de serviços.
+   - Configurações principais:
+     - Navegação com botões anterior e próximo.
+     - Paginação clicável.
+     - Autoplay com delay de 5000ms.
+     - Loop habilitado.
+  
+2. **AOS.js (Animate On Scroll):** Biblioteca que permite adicionar animações quando os elementos entram na viewport durante o scroll. Configurada para executar animações uma única vez.
+ 
+3. **EmailJS:** Utilizada para o envio de formulários sem a necessidade de configurar um servidor.
 
-1. Clone o repositório para o seu ambiente local:
-    ```bash
-    git clone https://github.com/garreto9/MaisPraTi.git
-    ```
-
-2. Navegue até o diretório do projeto:
-![Pasta do Repositório Clonado](https://github.com/garreto9/MaisPraTi/blob/main/Turma-02/module02/activities/activity-01/images/local%20arquivos.jpeg)
-    
-3. Abra o arquivo `index.html` :
-    ```bash
-    Dê dois cliques no arquivo
-    ```
-
-3. Navegue pelo site para explorar a lista de animes e links para plataformas de streaming.
-
----
+## Licença
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais informações.

@@ -10,6 +10,19 @@ header, footer {
     background-color: #000000; /* Define a cor de fundo do cabeçalho e rodapé */
 }
 
+#h1 {
+    color: #007bff; /* Cor do texto do título */
+    text-align: center; /* Centraliza o título */
+    text-decoration: none; /* Remove sublinhado do link */
+    font-size: 2.5rem; /* Define um tamanho de fonte maior */
+    margin: 20px 0; /* Espaço acima e abaixo do título */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+#h1:hover {
+    color: #0056b3; /* Cor ao passar o mouse */
+}
+
 h1, h2 {
     color: #007bff; /* Define a cor do texto dos títulos */
     text-align: center; /* Centraliza os títulos */
@@ -45,8 +58,7 @@ p {
 }
 
 .btn-primary {
-    background-color: #007bff; /* Define a cor de fundo dos botões primários */
-    border: none; /* Remove a borda dos botões primários */
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
 }
 
 .btn-primary:hover {
@@ -116,7 +128,7 @@ p {
 #services-container .card {
     background-color: #1f1f1f; /* Define a cor de fundo dos cartões de serviços */
     border: none; /* Remove a borda dos cartões de serviços */
-    color: #000000; /* Define a cor do texto dos cartões de serviços */
+    color: #ffffff; /* Define a cor do texto dos cartões de serviços */
     border-radius: 10px; /* Adiciona bordas arredondadas a esses cartões */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para efeitos */
 }
@@ -135,14 +147,33 @@ p {
     text-align: justify; /* Justifica o texto dos cartões */
 }
 
-#testimonial-container, #contactForm {
-    background-color: #1f1f1f; /* Define a cor de fundo dos contêineres de testemunhos e formulário de contato */
-    padding: 20px; /* Define o padding desses contêineres */
-    border-radius: 10px; /* Adiciona bordas arredondadas a esses contêineres */
+#testimonial-container {
+    background-color: #1f1f1f; /* Define a cor de fundo do contêiner de testemunhos */
+    padding: 20px; /* Define o padding desse contêiner */
+    border-radius: 10px; /* Adiciona bordas arredondadas a esse contêiner */
 }
 
-#testimonial-container h5, #contactForm h5 {
-    color: #007bff; /* Define a cor dos títulos nesses contêineres */
+#testimonial-container .card {
+    background-color: #1f1f1f; /* Fundo do card */
+    color: #ffffff; /* Define o texto como branco para contraste */
+    border: 1px solid #007bff; /* Borda azul para destacar */
+    border-radius: 10px; /* Borda arredondada */
+    padding: 15px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+blockquote {
+    font-style: italic; /* Texto em itálico para destacar */
+    color: #d3d3d3; /* Cor cinza claro para boa legibilidade */
+    margin: 15px 0; /* Margem entre o texto e o rodapé */
+    padding-left: 10px; /* Espaçamento lateral */
+    border-left: 4px solid #007bff; /* Borda lateral azul */
+}
+
+blockquote footer {
+    font-size: 0.9em; /* Tamanho menor para o rodapé */
+    color: #ffffff; /* Texto do rodapé branco */
+    margin-top: 5px; /* Espaço acima do rodapé */
 }
 
 .card {
@@ -203,36 +234,9 @@ footer p {
     margin-right: 5px; /* Espaço à direita dos ícones */
 }
 
-/* Media Queries para Responsividade */
+/* Responsividade para blocos de testemunhos */
 @media (max-width: 768px) {
-    body {
-        font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
-    }
-
-    #services-container .card {
-        margin: 10px 0; /* Reduz o espaço entre os cartões */
-    }
-
-    .nav-link {
-        width: auto; /* Alterar a largura dos links de navegação para caber em telas menores */
-    }
-
-    .swiper {
-        height: 60vh; /* Ajusta a altura do swiper em telas pequenas */
-    }
-}
-
-@media (max-width: 480px) {
-    header, footer {
-        padding: 10px; /* Reduzir o padding em dispositivos menores */
-    }
-
-    #about, #services, #testimonials {
-        padding: 15px; /* Reduz o padding das seções */
-    }
-
-    .card-img-top {
-        width: 80px; /* Ajusta a largura das imagens nos cartões */
-        height: 80px; /* Ajusta a altura das imagens nos cartões */
+    #testimonial-container .card {
+        margin-bottom: 20px; /* Mais espaço entre os cartões */
     }
 }
